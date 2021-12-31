@@ -1,10 +1,10 @@
 {
   "name": "create-elm-vite",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "CLI for initializing an Elm app with Vite",
-  "main": "index.mjs",
+  "main": "./dist/index.mjs",
   "bin": {
-    "create-elm-vite": "./elm-vite.mjs"
+    "create-elm-vite": "./dist/index.mjs"
   },
   "scripts": {
     "build": "npx unbuild",
