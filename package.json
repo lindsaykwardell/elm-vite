@@ -1,0 +1,25 @@
+{
+  "name": "elm-vite",
+  "version": "0.0.1",
+  "description": "CLI for initializing an Elm app with Vite",
+  "main": "index.mjs",
+  "bin": {
+    "elm-vite": "./elm-vite.mjs"
+  },
+  "scripts": {
+    "build": "npx unbuild",
+    "run": "npm run build && node ./dist/index.mjs"
+  },
+  "keywords": [
+    "elm",
+    "vite"
+  ],
+  "author": "Lindsay Wardell",
+  "license": "MIT",
+  "dependencies": {
+    "execa": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.5"
+  }
+}
