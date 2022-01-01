@@ -1,5 +1,6 @@
-export default {
-  entries: [
-    './src/index'
-  ]
-}
+import { defineBuildConfig } from "unbuild";
+
+export default defineBuildConfig({
+  entries: ["./src/index"],
+  
+});
