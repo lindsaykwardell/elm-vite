@@ -1,6 +1,6 @@
 {
   "name": "create-elm-vite",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "CLI for initializing an Elm app with Vite",
   "main": "dist/index.mjs",
   "bin": "dist/index.mjs",

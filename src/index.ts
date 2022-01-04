@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { execa } from "execa";
 
 const loc = process.argv[2] || ".";
