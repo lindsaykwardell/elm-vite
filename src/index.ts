@@ -1,13 +1,17 @@
 import { execa } from "execa";
 
-if (!process.argv[2]) {
-  throw new Error("Missing argument: <command>");
+const loc = process.argv[2] || ".";
+
+async function main() {
+  const { stderr } = await execa("npx", [
+    "degit",
+    "lindsaykwardell/vite-elm-template",
+    loc,
+  ]);
+
+  if (stderr) {
+    console.error(stderr);
+  }
 }
 
-const { stdout, stderr } = execa("npx", [
-  "degit",
-  "lindsaykwardell/vite-elm-template",
-  process.argv[2],
-]);
-
-console.log(stdout, stderr)
+main();
